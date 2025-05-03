@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>About Us</title>
+    <title>Edit Profile</title>
     <link rel="stylesheet" href="./src/css/style.css">
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
 </head>
@@ -42,28 +42,49 @@
             </div>
         </div>
     </div>
-    
-    <section class="main-content">
-        <h2>About Us</h2>
-        <hr class="divider"/>
-    
-        <div class="about-container">
-            <div>
-          <img src="./src/img/barangayhall.jpg" alt="Barangay Hall" class="about-image"/>
-          <p class="about-text">
-            Pulong Santol is a vibrant and growing barangay dedicated to fostering a strong sense of community, progress, and development. Located in the heart of Porac,
-            our barangay is home to hardworking and resilient residents who contribute to the area’s rich culture and traditions.
-             With a commitment to sustainable growth, public service, and community welfare, Pulong Santol continuously strives to improve infrastructure, education, and livelihood opportunities for its people. Guided by unity and cooperation, we aim to build a safe, inclusive, and prosperous environment for all.
-          </p>
+
+<div class="main-content">
+    <div class="header">
+        
+        <div class="profile-picture"><i class='bx bxs-user'></i></div>
+        <h1 class="user-name">CARL JOSHUA B. LAGAMAYO</h1>
+        
+    </div>
+    <div class="user-card">
+        <div class="user-info-title">
+            <hr><span>USER INFORMATION</span><hr>
         </div>
-        </div>
-      </section>
+        <form class="user-info-form">
+            <div class="form-column">
+                <label>Name:</label><input type="text">
+                <label>Middle Name:</label><input type="text">
+                <label>Last Name:</label><input type="text">
+                <label>Suffix:</label><input type="text">
+                <label>Age:</label><input type="text">
+                <label>Gender:</label><input type="text">
+                <label>Civil Status:</label><input type="text">
+                <label>Birthday:</label><input type="text">
+                <label>Birth Place:</label><input type="text">
+                <label>Citizenship:</label><input type="text">
+            </div>
+            <div class="form-column">
+                <label>Address:</label><input type="text">
+                <label>Phone Number:</label><input type="text">
+                <label>Email Address:</label><input type="text">
+            </div>
+        </form>
+        <button class="save-btn">Save Information</button>
+    </div>
+    
+</div>
+
 
     <script>
-        function toggleSidebar() {
+        function toggleSidebar() {  
             document.getElementById("sidebar").classList.toggle("collapsed");
         }
     </script>
+
 
 </body>
 </html>
