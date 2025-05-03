@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Barangay Clearance</title>
+    <link rel="stylesheet" href="./src/css/style.css">
+    <link href='../css/clearance.css' rel='stylesheet'>
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+</head>
+
+<body>
+
+    <div class="sidebar" id="sidebar">
+
+        <div class="sidebar-top">
+            <div class="logo">
+                <img src="./src/img/PSlogo.png" alt="logo">
+                <h2 class="logo-text">BARANGAY PULUNG SANTOL</h2>
+            </div>
+
+            <button class="toggle-btn" onclick="toggleSidebar()">☰</button>
+
+            <nav>
+                <ul>
+                    <li><a href="#"><i class='bx bx-user'></i><span class="link-text">Profile</span></a></li>
+                    <li><a href="#"><i class='bx bx-file'></i><span class="link-text">Request a Document</span></a></li>
+                    <li><a href="#"><i class='bx bx-file-find'></i><span class="link-text">Document Status</span></a>
+                    </li>
+                    <br>
+                    <hr>
+                </ul>
+            </nav>
+        </div>
+
+        <div class="sidebar-bottom">
+            <div class="footer">
+                <ul>
+                    <li><a href="#"><i class='bx bx-group'></i><span class="link-text">About Us</span></a></li>
+                    <li><a href="#"><i class='bx bxs-phone'></i><span class="link-text">Contact Us</span></a></li>
+                    <li><a href="#"><i class='bx bxs-chat'></i><span class="link-text">Help Us</span></a></li>
+                    <li><a href="#"><i class='bx bx-right-arrow-alt'></i><span class="link-text">Log Out</span></a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <div class="clearance-main-content">
+        <h2 class="form-header">BARANGAY PULUNG SANTOL PORAC PAMPANGA<br>
+            OFFICE OF THE PUNONG BARANGAY<br>
+            <hr>
+            APPLICATION FOR BARANGAY CLEARANCE<span class="individual"> <br>(INDIVIDUAL)</span>
+        </h2>
+
+        <form class="clearance-form">
+            <div class="top-row-container">
+                <div class="form-row-top">
+                    <label>New: <input type="checkbox"></label>
+                    <label>No: <input type="text"></label>
+                    <label>Clear No: <input type="text"></label>
+                </div>
+
+                <div class="form-row-top">
+                    <label>Renewal : <input type="checkbox"></label>
+                    <label>Date : <input type="date"></label>
+                    <label>Date : <input type="date"></label>
+                </div>
+            </div>
+
+            <div class="name-container">
+                <label>Name :</label>
+                <div class="form-row name-fields">
+                    <input type="text" placeholder="Apelyido">
+                    <input type="text" placeholder="Pangalan">
+                    <input type="text" placeholder="Gitnang Pangalan">
+                </div>
+            </div>
+
+            <div class="form-row">
+                <label>Address: <input type="text"></label>
+                <label>Sex: <input type="text"></label>
+            </div>
+            <div class="form-row">
+                <label>Date of Birth: <input type="date"></label>
+                <label>Place of Birth: <input type="text"></label>
+            </div>
+            <div class="form-row">
+                <label>Occupation: <input type="text"></label>
+                <label>Age: <input type="number"></label>
+            </div>
+            <div class="form-row">
+                <label>Civil Status: <input type="text"></label>
+                <label>Tel No.: <input type="text"></label>
+            </div>
+            <div class="form-row">
+                <label>Precint No.: <input type="text"></label>
+            </div>
+
+            <div class="purpose-container">
+                <div class="form-row">
+                    <label>If employed, Name of Company: <input type="text"></label>
+                </div>
+                <div class="form-row">
+                    <label>Purpose of Clearance: <input type="text"></label>
+                </div>
+            </div>
+
+            <div class="reference-container">
+                <div class="form-row-bottom">
+                    <label>Reference (at least two (2) not your relative):</label>
+                    <input type="text" style="width: 50%;">
+                    <input type="text" style="width: 50%; margin-top: 5px;">
+                </div>
+
+                <div class="signature-contaier">
+                    <div class="form-row signature-section">
+                        <div></div>
+                        <div class="signature">
+                            <label>Signature of Applicant:</label>
+                            <div class="signature-box">+</div>
+                        </div>
+                        
+                    </div>
+                    <button class="submit-btn">Submit</button>
+                </div>
+            </div>
+        </form>
+    </div>
+
+    <script>
+        function toggleSidebar() {
+            document.getElementById("sidebar").classList.toggle("collapsed");
+        }
+    </script>
+
+
+</body>
+
+</html>
