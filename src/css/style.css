@@ -434,6 +434,7 @@ body{
 }
 
 @media (max-width: 425px) {
+
     .main-content {
         margin-left: 80px;
         padding: 20px 10px;
@@ -684,6 +685,8 @@ input[style*="width: 100%"] {
 }
 
 @media (max-width: 425px) {
+
+
     .clearance-main-content {
         margin-left: 80px;
         padding: 20px 10px;
