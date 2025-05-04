@@ -1249,3 +1249,304 @@ body{
         width: 80%;
     }
 }
+
+/***********contact us na ginawa ni janny*************/
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing:border-box;
+}
+
+:root{
+    --bg-color: white;
+    --sidebar-color: #054708;
+    --main-text-color: white;
+}
+
+body{
+    background: var(--bg-color);
+    font-family: sans-serif,Arial, Helvetica, sans-serif;
+}
+
+
+.sidebar{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 15%;
+    z-index: 1;
+    background-color: var(--sidebar-color);
+    overflow-x: hidden;
+    padding-top: 10px;
+    padding: 1%;
+    height: 100%;
+}
+
+.logo{
+    display: flex;
+}
+
+.logo h2{
+    color: var(--main-text-color );
+    padding-bottom: 40px;
+    font-size: 100%;
+    margin-top: 9%;
+}
+
+.sidebar ul li{
+    list-style: none;
+}
+
+.sidebar-top ul{
+    position: relative;
+    padding-bottom: 200%;
+}
+
+
+.sidebar ul li a {
+    display: flex;
+    align-items: center;
+    gap: 10px; /* Space between icon and text */
+    color: var(--main-text-color);
+    text-decoration: none;
+    padding: 10px;
+    transition: 0.3s;
+}
+.sidebar ul li {
+    font-size: 100%;
+}
+
+
+
+.sidebar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 240px;
+    background-color: var(--sidebar-color);
+    overflow-x: hidden;
+    padding: 1%;
+    height: 100%;
+    transition: width 0.3s;
+}
+
+.sidebar.collapsed {
+    width: 100px;
+}
+
+.sidebar .toggle-btn {
+    background-color: transparent;
+    border: none;
+    color: white;
+    font-size: 20px;
+    margin-bottom: 10px;
+    cursor: pointer;
+    margin-left: 5px;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    margin-left: -10px;
+}
+
+.logo img {
+    margin-top: -12px;
+    height: 5rem;
+}
+
+.logo-text {
+    color: white;
+    font-size: 14px;
+    transition: opacity 0.3s;
+}
+
+.sidebar.collapsed .logo-text {
+    opacity: 0;
+    pointer-events: none;
+}
+
+.sidebar ul li {
+    list-style: none;
+}
+
+.sidebar ul li a {
+    display: flex;
+    align-items: center;
+    color: var(--main-text-color);
+    text-decoration: none;
+    padding: 10px;
+    margin-left: 5px;
+    transition: padding 0.3s;
+}
+
+.sidebar ul li a i {
+    font-size: 20px;
+    min-width: 24px;
+    text-align: center;
+}
+
+
+.link-text {
+    transition: opacity 0.3s;
+}
+
+.sidebar.collapsed .link-text {
+    opacity: 0;
+    pointer-events: none;
+}
+
+
+.toggle-btn {
+    background-color: transparent;
+    border: none;
+    color: white;
+    font-size: 24px;
+    cursor: pointer;
+    margin-left: 30px;
+    padding: 13px;
+}
+
+.sidebar ul li a:hover {
+    background-color: #043d06; /* darker green shade */
+   
+}
+
+.toggle-btn:hover {
+    background-color: #043d06; /* darker on hover */
+}
+
+.main-content {
+    margin-left: 240px; /* equal to sidebar width */
+    padding: 40px;
+    background-color: #f5f5f5;
+    min-height: 100vh;
+    transition: margin-left 0.3s;
+}
+
+
+.main-content h1 {
+    font-size: 2rem;
+    margin-bottom: 10px;
+}
+
+.subtitle {
+    margin-bottom: 30px;
+    color: #333;
+    display: flex;
+    justify-content: center;
+    font-size: 20px;
+}
+
+.contact-form {
+    display: flex;
+    justify-content: center;
+    gap: 80px;
+    margin-top: 180px;
+}
+
+.input-group {
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* this centers the content horizontally */
+    margin: 0 10px; /* optional spacing between input groups */
+}
+
+.input-group label {
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+.input-group input {
+    padding: 8px;
+    width: 200px;
+    border: 1px solid #aaa;
+    border-radius: 3px;
+}
+
+.submit-btn {
+    background-color: #054708;
+    color: white;
+    padding: 8px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    margin-top: 50px;
+    margin-left: 48%;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.2);
+}
+
+.contact-info {
+    display: flex;
+    justify-content: space-around;
+    text-align: center;
+    margin-top: 20%;
+}
+
+.contact-item i {
+    font-size: 5rem;
+    color: #0f65c7;
+    margin-bottom: 10px;
+
+}
+
+.contact-item h4 {
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+.contact-form label {
+    text-align: left;
+    width: 100%; /* ensures label spans full input-group width */
+    margin-bottom: 5px;
+    font-size: 20px;
+}
+
+
+/* Responsive for tablets and smaller */
+@media (max-width: 768px) {
+
+    .contact-form {
+        flex-direction: column;
+        gap: 20px;
+        align-items: center;
+        margin-top: 80px;
+    }
+
+    .input-group input {
+        width: 90vw;
+        max-width: 300px;
+    }
+
+    .submit-btn {
+        margin-left: 0;
+        display: block;
+        margin: 30px auto;
+    }
+
+    .contact-info {
+        flex-direction: column;
+        gap: 30px;
+        margin-top: 50px;
+    }
+
+    .contact-item i {
+        font-size: 3rem;
+    }
+
+    .subtitle {
+        font-size: 16px;
+        text-align: center;
+    }
+
+    .link-text {
+        font-size: 14px;
+    }
+
+    .toggle-btn {
+        font-size: 20px;
+        margin: 10px 0;
+    }
+}
