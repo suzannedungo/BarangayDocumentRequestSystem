@@ -2166,3 +2166,159 @@ body{
   .forgotpass-btn:hover {
     background-color: #026e02;
   }
+
+
+
+
+  /* ------------ Help us / Coomplaint Reporting ------------------*/
+  .HelpusForm {
+    max-width: 500px;
+    margin: 50px auto;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.HelpusForm label {
+    margin-bottom: 80px;
+    font-weight: bold;
+}
+
+.HelpusForm input[type="email"],
+.HelpusForm textarea {
+    width: 90%;
+    padding: 10px;
+    margin-bottom: 50px;
+    border: 1px solid green;
+    border-radius: 3px;
+}
+
+.HelpusForm button {
+    background-color: #063b06;
+    color: white;
+    padding: 10px 25px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    width: fit-content;
+    box-shadow: 2px 2px 5px rgba(0,0,0,0.3);
+}
+
+.HelpusForm button:hover {
+    background-color: #09590b;
+}
+
+@media (max-width: 768px) {
+    
+
+    .main-content {
+        margin-left: 0;
+        padding: 10px;
+    }
+
+    .HelpusForm {
+        margin: 20px 10px;
+        padding: 10px;
+    }
+}
+
+ /* ------------ Request of Document ------------------*/
+
+.card-grid-custom {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 30px;
+    margin-left: 200px; 
+    padding: 20px;
+    margin-left: 10px
+    ;
+}
+
+.card-top {
+    display: flex;
+    gap: 30px;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.card-bottom {
+    display: flex;
+    justify-content: center;
+}
+  
+  .clearance-card,
+  .indigency-card,
+  .business-card {
+    background: white;
+    padding: 24px;
+    border-radius: 20px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    width: 361px;
+    height: 300px;
+    margin-left: 80px;
+    margin-bottom: 30px;
+    margin-top: 30px;
+
+  }
+  
+  .icon {
+    font-size: 50px;
+    color: #004d00;
+    margin-top: 30px;
+    margin-bottom: 20px;
+  }
+  
+  h2 {
+    margin-bottom: 10px;
+    font-size: 18px;
+  }
+  
+  p {
+    font-size: 14px;
+    margin-bottom: 30px;
+  }
+  
+  button {
+    background-color: #054708;
+    color: white;
+    border: none;
+    padding: 8px 16px;
+    border-radius: 6px;
+    cursor: pointer;
+  }
+  
+  button:hover {
+    background-color: #006600;
+  }
+
+  @media (max-width: 768px) {
+    .card-top {
+        flex-direction: column;
+        align-items: center;
+        gap: 10px;
+    }
+
+    .card-grid-custom {
+        margin-left: 10;
+        padding: 10px;
+    }
+
+    .clearance-card,
+    .indigency-card,
+    .business-card {
+        margin: 0 auto;
+    }
+
+
+
+    .main-content {
+        margin-left: 0;
+    }
+}
+
+
+
+
