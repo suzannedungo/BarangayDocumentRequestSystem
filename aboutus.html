@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Us</title>
+    <link rel="stylesheet" href="./src/css/style.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+</head>
+
+<body>
+
+    <div class="sidebar" id="sidebar">
+
+        <div class="sidebar-top">
+            <div class="logo">
+                <img src="./src/img/PSlogo.png" alt="logo">
+                <h2 class="logo-text">BARANGAY PULUNG SANTOL</h2>
+            </div>
+
+            <button class="toggle-btn" onclick="toggleSidebar()">☰</button>
+
+            <nav>
+                <ul>
+                    <li><a href="#"><i class='bx bx-user'></i><span class="link-text">Profile</span></a></li>
+                    <li><a href="#"><i class='bx bx-file'></i><span class="link-text">Request a Document</span></a></li>
+                    <li><a href="#"><i class='bx bx-file-find'></i><span class="link-text">Document Status</span></a></li>
+                    <br><hr>
+                </ul>
+            </nav>
+        </div>
+
+        <div class="sidebar-bottom">
+            <div class="footer">
+                <ul>
+                    <li><a href="#"><i class='bx bx-group'></i><span class="link-text">About Us</span></a></li>
+                    <li><a href="#"><i class='bx bxs-phone'></i><span class="link-text">Contact Us</span></a></li>
+                    <li><a href="#"><i class='bx bxs-chat'></i><span class="link-text">Help Us</span></a></li>
+                    <li><a href="#"><i class='bx bx-right-arrow-alt'></i><span class="link-text">Log Out</span></a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    
+    <section class="main-content">
+        <h2>About Us</h2>
+        <hr class="divider"/>
+    
+        <div class="about-container">
+            <div>
+          <img src="./src/img/barangayhall.jpg" alt="Barangay Hall" class="about-image"/>
+          <p class="about-text">
+            Pulong Santol is a vibrant and growing barangay dedicated to fostering a strong sense of community, progress, and development. Located in the heart of Porac,
+            our barangay is home to hardworking and resilient residents who contribute to the area’s rich culture and traditions.
+             With a commitment to sustainable growth, public service, and community welfare, Pulong Santol continuously strives to improve infrastructure, education, and livelihood opportunities for its people. Guided by unity and cooperation, we aim to build a safe, inclusive, and prosperous environment for all.
+          </p>
+        </div>
+        </div>
+      </section>
+
+    <script>
+        function toggleSidebar() {
+            document.getElementById("sidebar").classList.toggle("collapsed");
+        }
+    </script>
+
+</body>
+</html>

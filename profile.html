@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Profile</title>
+    <link rel="stylesheet" href="./src/css/style.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+</head>
+
+<body>
+
+    <div class="sidebar" id="sidebar">
+
+        <div class="sidebar-top">
+            <div class="logo">
+                <img src="./src/img/PSlogo.png" alt="logo">
+                <h2 class="logo-text">BARANGAY PULUNG SANTOL</h2>
+            </div>
+
+            <button class="toggle-btn" onclick="toggleSidebar()">☰</button>
+
+            <nav>
+                <ul>
+                    <li><a href="#"><i class='bx bx-user'></i><span class="link-text">Profile</span></a></li>
+                    <li><a href="#"><i class='bx bx-file'></i><span class="link-text">Request a Document</span></a></li>
+                    <li><a href="#"><i class='bx bx-file-find'></i><span class="link-text">Document Status</span></a></li>
+                    <br><hr>
+                </ul>
+            </nav>
+        </div>
+
+        <div class="sidebar-bottom">
+            <div class="footer">
+                <ul>
+                    <li><a href="#"><i class='bx bx-group'></i><span class="link-text">About Us</span></a></li>
+                    <li><a href="#"><i class='bx bxs-phone'></i><span class="link-text">Contact Us</span></a></li>
+                    <li><a href="#"><i class='bx bxs-chat'></i><span class="link-text">Help Us</span></a></li>
+                    <li><a href="#"><i class='bx bx-right-arrow-alt'></i><span class="link-text">Log Out</span></a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+<div class="main-content">
+    <div class="header">
+        
+        <div class="profile-picture"><i class='bx bxs-user'></i></div>
+        <h1 class="user-name">CARL JOSHUA B. LAGAMAYO</h1>
+    </div>
+
+    <div class="user-card">
+        <div class="user-info">
+            <div class="column">
+                <p><strong>Name:</strong> Carl Joshua</p>
+                <p><strong>Middle Name:</strong> Balderama</p>
+                <p><strong>Last Name:</strong> Lagamayo</p>
+                <p><strong>Suffix:</strong> -</p>
+                <p><strong>Age:</strong> 20</p>
+                <p><strong>Gender:</strong> Male</p>
+                <p><strong>Civil Status:</strong> Single</p>
+                <p><strong>Birthday:</strong> August 18, 2004</p>
+                <p><strong>Birth Place:</strong> Guagua, Pampanga</p>
+                <p><strong>Citizenship:</strong> Filipino</p>
+            </div>
+            <div class="column right">
+                <p><strong>Address:</strong> Betis, Guagua, Pampanga</p>
+                <p><strong>Phone Number:</strong> 09123456789</p>
+                <p><strong>Email Address:</strong> cjlagamayo@gmail.com</p>
+            </div>
+        </div>
+       <a href="/editprofile.html"> <button class="edit-btn">Edit Information</button></a>
+    </div>
+</div>
+
+
+    <script>
+        function toggleSidebar() {  
+            document.getElementById("sidebar").classList.toggle("collapsed");
+        }
+    </script>
+
+
+</body>
+</html>
