@@ -8,6 +8,7 @@
     --bg-color: white;
     --sidebar-color: #054708;
     --main-text-color: white;
+    --event-background: #0547088d;
 }
 
 body{
@@ -353,7 +354,7 @@ body{
     margin: auto;
 }
 
-.header h1 {
+.event-header h1 {
     font-size: 24px;
     margin-bottom: 10px;
 }
@@ -649,7 +650,7 @@ input[type="checkbox"] {
     background-color: #f8f8f8;
 }
 
-.submit-btn {
+.clearance-submit-btn {
     margin-top: 10px;
     background-color: #054708;
     color: white;
@@ -657,8 +658,9 @@ input[type="checkbox"] {
     padding: 10px 25px;
     border-radius: 5px;
     cursor: pointer;
-    display: block;
-    margin-left: 72%;
+    display: flex;
+    justify-self: center;
+
 }
 
 input[style*="width: 100%"] {
@@ -735,11 +737,6 @@ input[style*="width: 100%"] {
     .signature-box {
         width: 100%;
         max-width: 250px;
-    }
-
-    .submit-btn {
-        width: 40%;
-        margin: 20px auto 0 auto;
     }
 
     .reference-container input {
