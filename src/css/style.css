@@ -1207,6 +1207,15 @@ body{
     background-color: #043d06;
 }
 
+.editprofile-edit-btn {
+  padding: 2%;
+  margin-left: 9px;
+  margin-top: 10px;
+  background-color: #014201;
+  color: white;
+  font-size: 70%;
+}
+
 @media (max-width: 768px) {
     .user-info-form {
         flex-direction: column;
@@ -1237,6 +1246,16 @@ body{
 
     .user-info-title hr {
         width: 80%;
+    }
+
+    .editprofile-edit-btn {
+      padding: 2%;
+      margin-left: 9px;
+      margin-top: 10px;
+      background-color: #014201;
+      color: white;
+      font-size: 20%;
+      align-items: center;
     }
 }
 
