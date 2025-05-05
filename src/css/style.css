@@ -1540,6 +1540,7 @@ body{
         margin: 10px 0;
     }
 }
+
 /*------------------------------------------------------- SIGN IN ------------------------------------------------------ */
 .signin-body {
     background: url('../img/SignInPSBG.png') no-repeat center center fixed;
@@ -1612,12 +1613,15 @@ body{
   
 
   .signin-form-box input {
+    box-sizing: border-box;
+    width: 100%;
     padding: 10px;
     margin: 3% 0;
     border: 2px solid #014201;
     border-radius: 10px;
     background-color: transparent;
     color: #014201;
+    font-size: 1em;
   }
   
   .signin-form-box input::placeholder {
