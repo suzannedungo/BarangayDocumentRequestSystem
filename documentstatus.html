@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document Status</title>
+    <link rel="stylesheet" href="./src/css/style.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+</head>
+
+<body>
+
+    <div class="sidebar" id="sidebar">
+
+        <div class="sidebar-top">
+            <div class="logo">
+                <img src="./src/img/PSlogo.png" alt="logo">
+                <h2 class="logo-text">BARANGAY PULUNG SANTOL</h2>
+            </div>
+
+            <button class="toggle-btn" onclick="toggleSidebar()">☰</button>
+
+            <nav>
+                <ul>
+                    <li><a href="#"><i class='bx bx-user'></i><span class="link-text">Profile</span></a></li>
+                    <li><a href="#"><i class='bx bx-file'></i><span class="link-text">Request a Document</span></a></li>
+                    <li><a href="#" class="documentstatus"><i class='bx bx-file-find'></i><span class="link-text">Document Status</span></a></li>
+                    <br><hr>
+                </ul>
+            </nav>
+        </div>
+
+        <div class="sidebar-bottom">
+            <div class="footer">
+                <ul>
+                    <li><a href="#"><i class='bx bx-group'></i><span class="link-text">About Us</span></a></li>
+                    <li><a href="#"><i class='bx bxs-phone'></i><span class="link-text">Contact Us</span></a></li>
+                    <li><a href="#"><i class='bx bxs-chat'></i><span class="link-text">Help Us</span></a></li>
+                    <li><a href="#"><i class='bx bx-right-arrow-alt'></i><span class="link-text">Log Out</span></a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        function toggleSidebar() {
+            document.getElementById("sidebar").classList.toggle("collapsed");
+        }
+    </script>
+
+<h2 class="documentstatus-page-title">Document Status</h2>
+
+    <div class="documentstatus-main">
+      <div class="documentstatus-info">
+        Track your Requested Document Here
+      </div>
+      
+      <hr class="documentstatus-divider" />
+
+      <div class="documentstatus-info documentstatus-highlight">
+        If your requested document happened to disappear from the list, you can check your email inbox!
+      </div>
+  
+      <div class="documentstatus-header-filters">
+        <p>Select Document</p>
+        <select>
+          <option>All Documents</option>
+        </select>
+        <p>Filter Status</p>
+        <select>
+          <option>All</option>
+        </select>
+      </div>
+  
+      <div class="documentstatus-table-container">
+        <table class="documentstatus-table">
+          <thead>
+            <tr>
+              <th>#</th>
+              <th>Document Type</th>
+              <th>Date Released</th>
+              <th>Transaction ID</th>
+              <th>Status</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>1</td>
+              <td>Barangay Clearance</td>
+              <td>March 31, 2025, 8:00 a.m</td>
+              <td>d075243e68fbbd729fc7f6c3f1512bf0</td>
+              <td><span class="documentstatus-status pending">Pending</span></td>
+            </tr>
+            <tr>
+              <td>2</td>
+              <td>Barangay Clearance</td>
+              <td>March 4, 2025, 9:00 a.m</td>
+              <td>7acbdf1243b37ac0cfbd39c92fa18266</td>
+              <td><span class="documentstatus-status released">Released</span></td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+
+</body>
+
+</html>

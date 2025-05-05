@@ -278,14 +278,6 @@ body{
     margin: 10px 0 20px 0;
 }
 
-
-.main-content {
-    margin-left: 240px; /* adjust as needed for sidebar */
-    padding: 40px;
-    background-color: #f5f5f5;
-    min-height: 100vh;
-}
-
 .business-permit-form {
     max-width: 700px;
     background-color: white;
@@ -336,3 +328,282 @@ body{
 }
 
 
+/*------------------------------------------------------- SIGN IN ------------------------------------------------------ */
+.signin-body {
+    background: url('../img/SignInPSBG.png') no-repeat center center fixed;
+    background-size: cover;
+  }
+/* Header */
+.signin-header {
+    background-color: #014201;
+    padding: 1%;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    color: white;
+  }
+  
+  .signin-logo-section {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+  }
+  
+  .signin-logo {
+    height: 50px;
+    transform: scale(1.7);
+    transform-origin: left center;
+  }
+  
+  .signin-header h1 {
+    font-size: 1.8em;
+    margin-left: 10%;
+  }
+  
+  /* Main Section */
+  .signin-main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 80%;
+    padding: 2%;
+  }
+  
+  /* Form Container */
+  .signin-form-container {
+    margin-top: 5%;
+    display: flex;
+    width: 90%;
+    max-width: 1000px;
+    justify-content: space-around;
+    gap: 15%;
+    flex-wrap: wrap;
+    padding: 2%;
+    border-radius: 10px;
+  }
+  
+  .signin-form-box {
+    flex: 1 1 40%;
+    display: flex;
+    flex-direction: column;
+    padding: 5%;
+    background-color: rgba(255, 255, 255, 0.7);
+    border-radius: 20px;
+    min-width: 280px;
+  }
+  
+  .signin-form-box h1 {
+    text-align: center;
+    color: #014201;
+    margin-bottom: 5%;
+  }
+  
+
+  .signin-form-box input {
+    padding: 10px;
+    margin: 3% 0;
+    border: 2px solid #014201;
+    border-radius: 10px;
+    background-color: transparent;
+    color: #014201;
+  }
+  
+  .signin-form-box input::placeholder {
+    color: #014201;
+    opacity: 0.7;
+  }
+  
+  .signin-forgot {
+    text-align: right;
+    font-size: 0.7em;
+    margin-bottom: 15px;
+    color: #001aff;
+    text-decoration: none;
+  }
+  
+  .signin-btn {
+    margin-top: 5%;
+    padding: 10px;
+    background-color: #014201;
+    color: white;
+    border: none;
+    border-radius: 15px;
+    cursor: pointer;
+    width: 100px;
+    align-self: center;
+  }
+  
+  .signin-btn:hover {
+    background-color: #027a02;
+  }
+  
+/* Responsive Styles */
+@media screen and (max-width: 768px) {
+  .signin-header {
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 10px;
+  }
+  
+    .signin-form-box {
+      width: 90%;
+      margin: 2% 0;
+    }
+  }
+
+  /*------------------------------------------------------- DOCUMENT STATUS ------------------------------------------------------ */
+  .sidebar ~ .documentstatus-main {
+    margin-left: 250px;
+  }
+  .documentstatus-page-title {
+    margin-left: 14%;
+    margin-top: 10%;
+    font-size: 2rem;
+    transition: margin-left 0.3s ease;
+  }
+  .documentstatus-main {
+    background-color: #fff;
+    padding: 2%;
+    border: 1px solid #ccc;
+    border-radius: 0.5rem;
+    margin-left: auto;
+    margin-right: 0.5%;
+    transition: margin-left 0.3s ease;
+  }
+
+  
+  .documentstatus-main h2 {
+    font-size: 2rem;
+    margin-bottom: 0.5em;
+  }
+  
+  .documentstatus-info {
+    font-size: 0.9rem;
+    color: #000000;
+    margin-bottom: 1em;
+    font-weight: bold;
+  }
+
+  .documentstatus-divider {
+    border: none;
+    height: 3px;
+    background-color: #ccc;
+    margin-bottom: 2%;
+  }
+  
+  .documentstatus-highlight {
+    color: #000000;
+    background-color: #e0e0e0;
+    padding: 1em;
+    border-radius: 0.4em;
+    margin-bottom: 1.5em;
+    font-weight: bold;
+  }
+  
+  .documentstatus-header-filters {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 1rem;
+    margin-bottom: 1.5rem;
+  }
+  
+  .documentstatus-header-filters p {
+    margin: 0;
+    font-weight: bold;
+  }
+  
+  .documentstatus-header-filters select {
+    padding: 0.5rem;
+    min-width: 160px;
+    font-size: 1rem;
+  }
+  
+  .documentstatus-table-container {
+    width: 100%;
+    overflow-x: auto;
+  }
+  
+  .documentstatus-table {
+    width: 100%;
+    border-collapse: collapse;
+    table-layout: auto;
+  }
+  
+  .documentstatus-table th,
+  .documentstatus-table td {
+    padding: 1em;
+    text-align: left;
+    border: 1px solid #ddd;
+    font-size: 0.95rem;
+  }
+  
+  .documentstatus-table th {
+    background-color: #f2f2f2;
+  }
+  
+  .documentstatus-status {
+    padding: 0.4em 0.8em;
+    border-radius: 0.3em;
+    color: white;
+    font-weight: bold;
+    display: inline-block;
+    font-size: 0.8rem;
+  }
+  
+  .documentstatus-status.pending {
+    background-color: #888;
+    text-align: center;
+    width: 100%;
+  }
+  
+  .documentstatus-status.released {
+    background-color: #4CAF50;
+    text-align: center;
+    width: 100%;
+  }
+  
+  /* Responsive behavior */
+  @media (max-width: 600px) {
+
+    .documentstatus-main h2 {
+      font-size: 1.5rem;
+    }
+  
+    .documentstatus-table th,
+    .documentstatus-table td {
+      font-size: 0.85rem;
+      padding: 0.6em;
+    }
+  
+    .documentstatus-status {
+      font-size: 0.75rem;
+    }
+
+    .documentstatus-main,
+    .documentstatus-page-title {
+      transition: margin-left 0.3s ease;
+    }
+
+    .sidebar ~ .documentstatus-main {
+      width: 70%;
+    }
+  }
+
+/* Ensure document status content shifts with the sidebar */
+.sidebar ~ .documentstatus-main {
+    margin-left: 250px;
+}
+
+.sidebar ~ .documentstatus-page-title {
+  margin-left: 280px;
+}
+
+.sidebar.collapsed ~ .documentstatus-main {
+  margin-left: 110px;
+  margin-right: 10px;
+  /* No need to redefine transition here, as it's already on the base class */
+}
+.sidebar.collapsed ~ .documentstatus-page-title {
+  margin-left: 130px;
+}
