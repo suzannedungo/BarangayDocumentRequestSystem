@@ -1838,3 +1838,331 @@ body{
 .sidebar.collapsed ~ .documentstatus-page-title {
   margin-left: 130px;
 }
+
+/* ===================== Announcement Page ==================== gawa ni lagamayo*/
+
+.main-content-announcement {
+    margin-left: 240px;
+    padding: 60px 40px;
+    min-height: 100vh;
+    transition: margin-left 0.3s;
+}
+
+.sidebar.collapsed ~ .main-content-announcement {
+    margin-left: 100px;
+}
+
+/* Announcement Container */
+.announcement-container {
+    padding: 5px;
+    background-color: white;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+/* Announcement Title */
+.announcement-title {
+    font-size: 30px;
+    font-weight: 700;
+    color: #000;
+    margin-bottom: 20px;
+}
+
+/* Thin black divider line */
+.announcement-divider {
+    border: none;
+    height: 1px;
+    background-color: #000;
+    margin-bottom: 40px;
+    width: 100%;
+}
+
+/* Announcement Image Area */
+.announcement-images {
+    background-color: #0a4001;
+    border-radius: 10px;
+    padding: 60px 20px;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+    max-width: 100%;
+}
+
+/* Image Styles */
+.announcement-images img {
+    width: 100%;
+    max-width: 340px;
+    height: auto;
+    border-radius: 10px;
+    object-fit: cover;
+    box-shadow: 0 6px 16px rgba(0, 0, 0, 0.25);
+    transition: transform 0.3s ease;
+}
+
+.announcement-images img:hover {
+    transform: scale(1.02);
+}
+
+/* ===================== Announcement Page Responsive  ==================== gawa ni lagamayo*/
+
+@media (max-width: 992px) {
+    .main-content-announcement {
+        padding: 40px 20px;
+        margin-left: 100px; /* collapsed sidebar default */
+    }
+
+    .announcement-title {
+        font-size: 26px;
+    }
+
+    .announcement-images {
+        padding: 40px 15px;
+        gap: 15px;
+    }
+}
+
+@media (max-width: 768px) {
+    .announcement-title {
+        text-align: center;
+    }
+
+    .announcement-images {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .announcement-images img {
+        width: 90%;
+        max-width: 90%;
+    }
+}
+
+@media (max-width: 480px) {
+    .main-content-announcement {
+        padding: 30px 10px;
+    }
+
+    .announcement-title {
+        font-size: 22px;
+    }
+
+    .announcement-images {
+        padding: 30px 10px;
+    }
+
+    .announcement-images img {
+        width: 100%;
+        max-width: 100%;
+    }
+}
+
+/* ===================== Log Out Page ==================== gawa ni lagamayo*/
+
+.main-content-log-out {
+    margin-left: 240px;
+    min-height: 100vh;
+    transition: margin-left 0.3s;
+    padding: 40px;
+    background-color: #ffffff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.sidebar.collapsed ~ .main-content-log-out {
+    margin-left: 100px;
+}
+
+/* Centered logout box */
+.logged-out-container {
+    padding: 40px;
+    max-width: 600px;
+    width: 100%;
+}
+
+/* Header: "Logged Out" */
+.logout-title {
+    font-size: 50px;
+    font-weight: 700;
+    color: #000;
+    margin-bottom: 30px;
+}
+
+/* Subtext */
+.logout-subtext {
+    font-size: 20px;
+    color: #222;
+    margin-bottom: 30px;
+}
+
+/* "See you later!" text */
+.logout-see-you {
+    font-size: 30px;
+    font-weight: 600;
+    color: #000;
+    margin-bottom: 30px;
+}
+
+/* Sign In Again button */
+.signin-button {
+    background-color: #113c00;
+    color: white;
+    border: none;
+    padding: 12px 30px;
+    font-size: 1rem;
+    font-weight: 500;
+    border-radius: 10px;
+    box-shadow: 0 3px 3px rgba(0, 0, 0, 0.2);
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.signin-button:hover {
+    background-color: #298e04;
+}
+
+/* ===================== Log Out Responsive ====================gawa ni lagamayo */
+
+@media (max-width: 768px) {
+    .main-content-log-out {
+        padding: 20px;
+        margin-left: 100px;
+    }
+
+    .logout-title {
+        font-size: 36px;
+    }
+
+    .logout-subtext {
+        font-size: 18px;
+    }
+
+    .logout-see-you {
+        font-size: 24px;
+    }
+
+    .signin-button {
+        font-size: 0.95rem;
+        padding: 10px 24px;
+    }
+}
+
+@media (max-width: 480px) {
+    .logout-title {
+        font-size: 28px;
+    }
+
+    .logout-subtext,
+    .logout-see-you {
+        font-size: 18px;
+    }
+
+    .signin-button {
+        font-size: 0.9rem;
+        padding: 10px 20px;
+    }
+
+    .logged-out-container {
+        padding: 20px 10px;
+    }
+}
+
+/* ===================== Forgot Password Page ==================== gawa ni lagamayo*/
+
+/* Background image */
+.forgotpass-body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background: url('/src/img/SignInPSBG.png') no-repeat center center fixed;
+    background-size: cover;
+  }
+  
+  /* Header */
+  .forgotpass-header {
+    background-color: #014201;
+    padding: 1%;
+    display: flex;
+    align-items: center;
+    color: white;
+  }
+  
+  .forgotpass-logo-section {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+  }
+  
+  .forgotpass-logo {
+    height: 50px;
+    transform: scale(1.7);
+    transform-origin: left center;
+  }
+  
+  .forgotpass-header h1 {
+    font-size: 1.8em;
+    margin-left: 10%;
+  }
+  
+  .highlight {
+    color: #ffffff;
+  }
+  
+  /* Centered form container */
+  .forgotpass-main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 80vh;
+  }
+  
+  .forgotpass-form-container {
+    background-color: rgba(255, 255, 255, 0.85);
+    padding: 40px 30px;
+    border-radius: 15px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
+    width: 80%;
+    max-width: 400px;
+    text-align: center;
+  }
+  
+  /* Heading */
+  .forgotpass-form-box h2 {
+    color: #014201;
+    font-weight: bold;
+    margin-bottom: 30px;
+    font-size: 1.5em;
+  }
+  
+  /* Input fields */
+  .forgotpass-form-box input {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 2px solid #014201;
+    border-radius: 8px;
+    font-size: 1em;
+    outline: none;
+  }
+
+  .forgotpass-form-box input::placeholder {
+    color: #014201;
+    opacity: 0.7;
+  }
+  
+  /* Button */
+  .forgotpass-btn {
+    background-color: #014201;
+    color: white;
+    border: none;
+    padding: 10px;
+    font-size: 1em;
+    border-radius: 150px;
+    cursor: pointer;
+    width: 40%;
+  }
+  
+  .forgotpass-btn:hover {
+    background-color: #026e02;
+  }

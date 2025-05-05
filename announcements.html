@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Announcements</title>
+    <link rel="stylesheet" href="./src/css/style.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+</head>
+
+<body>
+
+    <div class="sidebar" id="sidebar">
+
+        <div class="sidebar-top">
+            <div class="logo">
+                <img src="./src/img/PSlogo.png" alt="logo">
+                <h2 class="logo-text">BARANGAY PULUNG SANTOL</h2>
+            </div>
+
+            <button class="toggle-btn" onclick="toggleSidebar()">☰</button>
+
+            <nav>
+                <ul>
+                    <li><a href="#"><i class='bx bx-user'></i><span class="link-text">Profile</span></a></li>
+                    <li><a href="#"><i class='bx bx-file'></i><span class="link-text">Request a Document</span></a></li>
+                    <li><a href="#"><i class='bx bx-file-find'></i><span class="link-text">Document Status</span></a>
+                    </li>
+                    <br>
+                    <hr>
+                </ul>
+            </nav>
+        </div>
+
+        <div class="sidebar-bottom">
+            <div class="footer">
+                <ul>
+                    <li><a href="#"><i class='bx bx-group'></i><span class="link-text">About Us</span></a></li>
+                    <li><a href="#"><i class='bx bxs-phone'></i><span class="link-text">Contact Us</span></a></li>
+                    <li><a href="#"><i class='bx bxs-chat'></i><span class="link-text">Help Us</span></a></li>
+                    <li><a href="#"><i class='bx bx-right-arrow-alt'></i><span class="link-text">Log Out</span></a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <div class="main-content-announcement">
+        <div class="announcement-container">
+            <h1 class="announcement-title">Announcement</h1>
+            <hr class="announcement-divider" />
+
+            <div class="announcement-images">
+                <img src="./src/img/announce1.png" alt="Announcement 1">
+                <img src="./src/img/announce2.png" alt="Announcement 2">
+                <img src="./src/img/announce3.png" alt="Announcement 3">
+            </div>
+        </div>
+    </div>
+
+
+    <script>
+        function toggleSidebar() {
+            document.getElementById("sidebar").classList.toggle("collapsed");
+        }
+    </script>
+
+
+</body>
+
+</html>
