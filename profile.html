@@ -23,9 +23,10 @@
 
             <nav>
                 <ul>
-                    <li><a href="#"><i class='bx bx-user'></i><span class="link-text">Profile</span></a></li>
-                    <li><a href="#"><i class='bx bx-file'></i><span class="link-text">Request a Document</span></a></li>
-                    <li><a href="#"><i class='bx bx-file-find'></i><span class="link-text">Document Status</span></a></li>
+                    <li><a href="index.html"><i class='bx bx-home'></i><span class="link-text">Dashboard</span></a></li>
+                    <li><a href="profile.html"class="active"><i class='bx bx-user'></i><span class="link-text">Profile</span></a></li>
+                    <li><a href="requestdocument.html"><i class='bx bx-file'></i><span class="link-text">Request a Document</span></a></li>
+                    <li><a href="documentstatus.html"><i class='bx bx-file-find'></i><span class="link-text">Document Status</span></a></li>
                     <br><hr>
                 </ul>
             </nav>
@@ -34,10 +35,10 @@
         <div class="sidebar-bottom">
             <div class="footer">
                 <ul>
-                    <li><a href="#"><i class='bx bx-group'></i><span class="link-text">About Us</span></a></li>
-                    <li><a href="#"><i class='bx bxs-phone'></i><span class="link-text">Contact Us</span></a></li>
-                    <li><a href="#"><i class='bx bxs-chat'></i><span class="link-text">Help Us</span></a></li>
-                    <li><a href="#"><i class='bx bx-right-arrow-alt'></i><span class="link-text">Log Out</span></a></li>
+                    <li><a href="aboutus.html"><i class='bx bx-group'></i><span class="link-text">About Us</span></a></li>
+                    <li><a href="contactus.html"><i class='bx bxs-phone'></i><span class="link-text">Contact Us</span></a></li>
+                    <li><a href="helpus.html"><i class='bx bxs-chat'></i><span class="link-text">Help Us</span></a></li>
+                    <li><a href="logout.html"><i class='bx bx-right-arrow-alt'></i><span class="link-text">Log Out</span></a></li>
                 </ul>
             </div>
         </div>
@@ -79,6 +80,13 @@
         function toggleSidebar() {  
             document.getElementById("sidebar").classList.toggle("collapsed");
         }
+
+        const links = document.querySelectorAll('.sidebar a');
+    links.forEach(link => {
+        if (link.href === window.location.href) {
+            link.classList.add('active');
+        }
+    });
     </script>
 
 

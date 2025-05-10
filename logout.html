@@ -13,7 +13,6 @@
 
     <div class="sidebar" id="sidebar">
 
-
         <div class="sidebar-top">
             <div class="logo">
                 <img src="./src/img/PSlogo.png" alt="logo">
@@ -24,12 +23,11 @@
 
             <nav>
                 <ul>
-                    <li><a href="#"><i class='bx bx-user'></i><span class="link-text">Profile</span></a></li>
-                    <li><a href="#"><i class='bx bx-file'></i><span class="link-text">Request a Document</span></a></li>
-                    <li><a href="#"><i class='bx bx-file-find'></i><span class="link-text">Document Status</span></a>
-                    </li>
-                    <br>
-                    <hr>
+                    <li><a href="index.html"><i class='bx bx-home'></i><span class="link-text">Dashboard</span></a></li>
+                    <li><a href="profile.html"><i class='bx bx-user'></i><span class="link-text">Profile</span></a></li>
+                    <li><a href="requestdocument.html"><i class='bx bx-file'></i><span class="link-text">Request a Document</span></a></li>
+                    <li><a href="documentstatus.html"><i class='bx bx-file-find'></i><span class="link-text">Document Status</span></a></li>
+                    <br><hr>
                 </ul>
             </nav>
         </div>
@@ -37,14 +35,13 @@
         <div class="sidebar-bottom">
             <div class="footer">
                 <ul>
-                    <li><a href="#"><i class='bx bx-group'></i><span class="link-text">About Us</span></a></li>
-                    <li><a href="#"><i class='bx bxs-phone'></i><span class="link-text">Contact Us</span></a></li>
-                    <li><a href="#"><i class='bx bxs-chat'></i><span class="link-text">Help Us</span></a></li>
-                    <li><a href="#"><i class='bx bx-right-arrow-alt'></i><span class="link-text">Log Out</span></a></li>
+                    <li><a href="aboutus.html"><i class='bx bx-group'></i><span class="link-text">About Us</span></a></li>
+                    <li><a href="contactus.html"><i class='bx bxs-phone'></i><span class="link-text">Contact Us</span></a></li>
+                    <li><a href="helpus.html"><i class='bx bxs-chat'></i><span class="link-text">Help Us</span></a></li>
+                    <li><a href="logout.html" class="active"><i class='bx bx-right-arrow-alt'></i><span class="link-text">Log Out</span></a></li>
                 </ul>
             </div>
         </div>
-
     </div>
 
     <div class="main-content-log-out">
@@ -52,15 +49,22 @@
             <h1 class="logout-title">Logged Out</h1>
             <p class="logout-subtext">Thank you for visiting Barangay Pulung Santol</p>
             <h2 class="logout-see-you">See you later!</h2>
-            <button class="signin-button">Sign in Again</button>
+            <a href="signin.html"><button class="signin-button">Sign in Again</button></a>
         </div>
     </div>
 
     <script>
-        function toggleSidebar() {
-            document.getElementById("sidebar").classList.toggle("collapsed");
-        }
-    </script>
+        function toggleSidebar() {  
+          document.getElementById("sidebar").classList.toggle("collapsed");
+      }
+
+      const links = document.querySelectorAll('.sidebar a');
+  links.forEach(link => {
+      if (link.href === window.location.href) {
+          link.classList.add('active');
+      }
+  });
+  </script>
 
 
 </body>
