@@ -1668,22 +1668,25 @@ body{
     text-decoration: none;
   }
   
+  /*********************** BTN INAYOS NI MARK GREATEST TECHNITIAN************/
   .signin-btn {
-    margin-top: 5%;
-    padding: 10px;
-    background-color: #014201;
-    color: white;
-    border: none;
-    border-radius: 15px;
-    cursor: pointer;
-    width: 100px;
-    align-self: center;
-  }
- 
-  
-  .signin-btn:hover {
-    background-color: #027a02;
-  }
+  display: inline-block;
+  margin-top: 5%;
+  padding: 10px;
+  background-color: #014201;
+  color: white;
+  border-radius: 15px;
+  cursor: pointer;
+  width: 100px;
+  align-self: center; /* Center within flex container */
+  text-align: center;
+  text-decoration: none;
+  font-size: 1em;
+}
+.signin-btn:hover {
+  background-color: #027a02;
+}
+
   
 /* Responsive Styles */
 @media screen and (max-width: 768px) {
