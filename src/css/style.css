@@ -1708,7 +1708,8 @@ body{
   }
   .documentstatus-page-title {
     margin-left: 14%;
-    margin-top: 10%;
+    margin-top: 2%;
+    margin-bottom: 8%;
     font-size: 2rem;
     transition: margin-left 0.3s ease;
   }
